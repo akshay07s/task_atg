@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency</title>
+</head>
+<body>
+    <div class="form-container">
+    <h1 style="text-align:center;font: 30px Lucida Handwriting;">Find the most occuring words on a particular Webpage</h1>
+        <div>
+        <form method="POST" action="/result/">
+            {% csrf_token %}
+            {% for non_field_error in form.non_field_errors %}
+                <p>{{ non_field_error }}</p>
+            {% endfor %}
+            {% for field in form %}
+                <div class="field">
+                <label class="label">
+                    {{ field.html_name }}
+                </label>
+                {{ field }}
+                {% for error in field.errors %}
+                    <p>
+                        {{ error }}
+                    </p>
+                {% endfor %}
+                </div>
+            {% endfor %}
+            <div id="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+        </div>
+</body>
+</html>

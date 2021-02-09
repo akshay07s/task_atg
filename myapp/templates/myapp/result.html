@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+<body>
+    <div class="success">{{message}}</div>
+    <div class="cart-container">
+        <div>
+            <div class="head">
+                <span></span>
+                <span>Words</span>
+                <span></span>
+                <span></span>
+                <span style="text-align: center;">Frequency</span>
+                <span></span>
+            </div>
+            <table> 
+                <tbody>
+                    {% for words,count in ten_words %}
+                    <tr>
+                        <td></td>
+                        <td>{{words}}</td>
+                        <td style="border-right: 3px solid white;"></td>
+                        <td></td>
+                        <td style="text-align: center;" >{{count}}</td>
+                        <td></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

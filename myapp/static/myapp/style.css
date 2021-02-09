@@ -1,0 +1,134 @@
+.form-container
+{
+    width: 100%;
+    height: 97vh;
+    background-image: linear-gradient(to right,#FFEEEE,#DDEFBB);
+}
+
+.form-container>div{
+    border-radius: 7px;
+    padding: 18px;
+    width: 40%;
+    background: #DAE2F8;
+    position: absolute;
+    top: 25%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.field
+{
+    margin: 20px;
+}
+
+.label
+{   
+    text-transform: uppercase;
+    font: 20px Lucida Handwriting;
+}
+
+.field input
+{
+    border: none;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    border-right: 1px solid rgb(163, 163, 163);
+    width: 100%;
+    font-size: 20px;
+}
+
+.field input:focus
+{
+    outline: none;
+}
+
+form #button
+{
+    text-align: center;
+}
+
+form button
+{
+    border: 3px solid#24C6DC;
+    font-size: 24px;
+    padding: 12px 40px;
+    border-radius: 20px;
+    background-color: #24C6DC;
+    color: white;
+    font: 20px Lucida Handwriting;
+}
+
+form button:hover
+{
+    border: 3px solid#24C6DC;
+    background-color: white;
+    color:#24C6DC;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+form p
+{
+    font: 1em sans-serif;
+    color: red;
+}
+
+.cart-container
+{
+    width: 100%;
+    height: 97vh;
+    background-image: linear-gradient(to right, #FFEEEE,#DDEFBB);
+}
+
+.cart-container>div{
+    width: 40%;
+    background: #DAE2F8;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+.cart-container table
+{
+    width: 100%;
+}
+
+.cart-container tr, .head
+{
+    display: grid;
+    grid-template-columns: 17% 16% 17% 17% 16% 16%;
+}
+
+.cart-container tbody td
+{
+    font: 20px Lucida Console;
+}
+
+.cart-container tbody td, .head span
+{
+    padding: 8px;
+}
+
+.cart-container .head
+{
+    background-image: linear-gradient(to right, #283048,#859398);
+    font: 25px Lucida Handwriting;
+    color: white;
+}
+
+.success
+{
+    font: 25px Lucida Handwriting;
+    text-align: center;
+    padding: 8px;
+    position: absolute;
+    background: white;
+    color: rgb(0, 0, 0);
+    width: 98%;
+}
